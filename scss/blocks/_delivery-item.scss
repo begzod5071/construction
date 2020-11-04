@@ -1,0 +1,121 @@
+.delivery-item{
+  position: relative;
+  width:  334px;
+  padding-left: 64px;
+  margin-bottom: 33px;
+
+  &::before{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    top: 0;
+    left: 0;
+  }
+  &--frame::before{
+    background-image: url("../../img/Frame.png");
+  }
+  &--korzinka::before{
+    background-image: url("../../img/korzinka.png");
+  }
+  &--formwork::before{
+    background-image: url("../../img/formwork.png");
+  }
+  &--Precasts::before{
+    background-image: url("../../img/Precasts.png");
+  }
+  &--Facades::before{
+    background-image: url("../../img/Facades.png");
+  }
+  &--Fitout::before{
+    background-image: url("../../img/Fit-out.png");
+  }
+  &--Scaffolding::before{
+    background-image: url("../../img/Scaffolding.png");
+  }
+  &--technique::before{
+    background-image: url("../../img/Frame-1.png");
+  }
+  &--MEP::before{
+    background-image: url("../../img/MEP.png");
+  }
+}
+
+
+.delivery-item:nth-child(3n){
+  margin-right: 27px;
+}
+
+.menu-list__title {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #212B31;
+}
+.menu-list__text {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #72787D;
+
+}
+@media only screen and (max-width: 1080px){
+  .delivery-item{
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+    &::before{
+      width: 200px;
+      height: 200px;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+    }
+  }
+  .menu-list__title{
+font-weight: bold;
+font-size: 24px;
+line-height: 32px;
+  }
+  .menu-list__text{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+@media only screen and (max-width: 600px){
+  .delivery-item{
+width: 100%;
+padding-left: 64px;
+text-align: start;
+&::before{
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+  }
+  .menu-list__title{
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .menu-list__text{
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
